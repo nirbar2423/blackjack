@@ -338,6 +338,8 @@ def window_creation(money,bet):
         #    money += window_you_win(cards,oponnent_cards,bet)
         if sum(value) >21:
             money += window_you_lose(cards,oponnent_cards,bet,value)
+        if sum(value)==21:
+            take_a_card = 0
     if take_a_card ==0:
             window_oponnent_cards_show(cards,oponnent_cards)
          #   if sum(oponnent_value) == 21:
